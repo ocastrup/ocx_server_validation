@@ -1,0 +1,11 @@
+{% extends 'layouts/main.html' %}
+{% block title %}Validate an OCX Model{% endblock %}
+{% block content %}
+  <h1>Schema version to validate against</h1>
+  <br>
+  <form method="post" class="form">
+     <div class="form-field">{{ "Select schema: " }} {{ form.schema }}
+         <input type="submit" value="Submit" >
+    </div>
+  </form>
+{% endblock %}
