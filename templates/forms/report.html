@@ -1,0 +1,16 @@
+{% extends 'layouts/main.html' %}
+{% block content %}
+<div class="page-header">
+  <h1>OCX validation</h1>
+</div>
+<div class="formwrapper">
+    <h3>Validation of OCX model: <font face="verdana" color="blue">{{name}}</font></h3>
+    <h4>Number of errors in model: <font face="verdana" color="red">{{errors}}</font></h4>
+    {%if errors is eq(0) %}
+        <h3>The model is valid</h3>
+    {% else %}
+        <h3> Error report</h3>
+        <font face="verdana" size="2">
+        {{ table }}
+    {% endif %}
+ {% endblock %}
