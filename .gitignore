@@ -4,8 +4,7 @@ uploads/
 
 #Ignore XMLSPy files
 *.spp
-#Schema
-*.xsd
+
 #zip and geometry files
 *.zip
 *.zipx
