@@ -1,11 +1,14 @@
 {% extends 'layouts/main.html' %}
-{% block title %}Validate an OCX Model{% endblock %}
+{% block title %}Select the OCX schema{% endblock %}
 {% block content %}
-  <h1>Schema version to validate against</h1>
-  <br>
+<div class="page-header">
+  <h1> OCX schema version to validate against</h1>
+</div>
   <form method="post" class="form">
-     <div class="form-field">{{ "Select schema: " }} {{ form.schema }}
-         <input type="submit" value="Submit" >
-    </div>
+        {{ form.hidden_tag() }}
+      <div class="form-field">{{ "Select schema: " }} {{ form.schema }} {{ form.submit }}
+      </div>
+      <br>
+      <h3><font face="verdana" color="red">Note: The schema will take minute to load, be patient</font></h3>
   </form>
 {% endblock %}

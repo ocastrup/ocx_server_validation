@@ -3,12 +3,17 @@
 {% block content %}
 
 <div class="page-header">
-  <h1>About Page</h1>
+  <h1>How to validate</h1>
 </div>
-<p class="lead">This is just a placeholder page which should be replaced with real content.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus ligula, imperdiet id lobortis sit amet, scelerisque non sapien. Duis quis dui quis mauris dapibus fringilla. Pellentesque nec tellus ac diam volutpat malesuada.</p>
-<p>In quam arcu, interdum vel arcu viverra, vulputate convallis massa. Sed hendrerit velit a arcu euismod, sit amet consequat lacus imperdiet. Nullam quis dui sapien. Vestibulum placerat, justo non fringilla laoreet, dui ipsum posuere nisi, nec vestibulum eros leo ut sapien.</p>
-<p>Vivamus eu felis sed magna scelerisque semper in et libero. Curabitur sed convallis odio, quis venenatis sapien. In convallis a velit ac commodo. Donec sapien ligula, vestibulum ut nisi accumsan, facilisis pretium est. Fusce varius semper orci, et egestas nulla cursus a. Phasellus aliquam, mi ac adipiscing lobortis, ipsum augue aliquam ligula, quis fermentum mi augue vel ligula.</p>
-<p>Integer elementum malesuada dolor in aliquet.</p>
+<h3>Short user guide</h3>
+<ol>
+  <li>Select the schema to validate the model against on the "Schema" page and press "Load schema"</li>
+  <li>Once the schema has been loaded, you are redirected to the "Validate" page</li>
+  <li>Select your model by pressing the "Choose file" button</li>
+  <li>Press the "Submit" button. The file will be uploaded and validated and you are redirected to the "Report" page to see the results</li>
+  <li>After each validation you may cut and past the results on the report page to an editor of your choice if you want to make a copy of the validation report</li>
+  <li>You can validate a new file against the same schema by going back to the "Validate" page and selecting a new file to upload.</li>
+</ol>
+<p>After each session, all uploaded files are deleted from the server.</p>
 
 {% endblock %}

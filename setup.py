@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name='ocx-server-validation',
     version='0.1',
-    packages=['SchemaParser'],
+    packages=['ocxSchema', 'ocxValidate'],
     url='',
     license='',
     author='oca',
