@@ -13,5 +13,5 @@ class Config:
     ALLOWED_EXTENSIONS = set(['xml', 'ocx'])
     FLASK_ENV = 'production'
     # Debug mode = True if FLASK_ENV = development.
-    DEBUG = False
+    DEBUG = True
 
