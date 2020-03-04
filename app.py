@@ -176,7 +176,7 @@ def not_found_error(error):
     return render_template('errors/404.html'), 404
 
 
-if not app.debug:
+'''if not app.debug:
     file_handler = FileHandler('error.log')
     file_handler.setFormatter(
         Formatter('%(asctime)s %(levelname)s: %(message)s [in %(pathname)s:%(lineno)d]')
@@ -185,6 +185,7 @@ if not app.debug:
     file_handler.setLevel(logging.INFO)
     app.logger.addHandler(file_handler)
     app.logger.info('errors')
+'''
 
 # ----------------------------------------------------------------------------#
 # Launch.
